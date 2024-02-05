@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
     import { fhir } from "./fhir";
+    import { navigate } from "svelte-routing";
     let loading = false
     export let id;
     let form;
@@ -12,11 +13,13 @@
         const r = await fhir.put(`/Patient/${id}`,{...e.detail,id: id})
         console.log(r.data)
         loading = false
+        navigate("/",{replace:true})
       }else{
           loading = true
           const r = await fhir.post("/Patient",e.detail)
           console.log(r.data)
           loading = false
+          navigate("/",{replace:true})
       }
     }
 

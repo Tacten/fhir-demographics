@@ -38,24 +38,3 @@ This command will pull the necessary Docker image, create and start the containe
 4. Access the HAPI FHIR server:
 
     Open your web browser and go to [http://localhost:8090](http://localhost:8090).
-
-## Usage
-
-Describe how users can interact with your project. Include information on:
-
-- API endpoints for FHIR demographics
-- Sample requests and responses
-- Any additional configuration or customization
-
-
-## Acknowledgments
-
-- Mention any libraries, tools, or people whose code or work you have used or appreciated.
-
-## Troubleshooting
-
-Include common issues and their solutions here.
-
-## Contact
-
-If you have any questions or concerns, feel free to contact [your-email@example.com](mailto:i.dheerajdileep@gmail.com).
